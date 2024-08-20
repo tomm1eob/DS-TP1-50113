@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1-50113</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        tfoot {
+            background-color: rebeccapurple;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trabajo Practico 1 - 50113 - Tomás Obredor</h1>
+        <div>
+            <h3 style="text-decoration: underline;">Indice:</h3>
+            <nav>    
+                <ul>
+                    <li><a href="#EstructuraBasica">Estructura Básica</a></li>
+                    <li><a href="#EncabezadosYTexto">Encabezados y texto</a></li>
+                    <li><a href="#DivisoresYDivs">Divisores y Divs</a></li>
+                    <li><a href="#EnlacesYListas">Enlaces y Listas</a></li>
+                    <li><a href="#ElementosMultimedia">Elementos Multimedia</a></li>
+                    <li><a href="#Tablas">Tablas</a></li>
+                    <li><a href="#Formularios">Formularios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="EstructuraBasica">
+            <h1>1. Estructura básica del documento HTML</h1>
+            <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+        </section>
+
+        <section id="EncabezadosYTexto">
+            <h1>2. Encabezados y Propiedades del Texto</h1>
+            <article>
+                <h1 style="font-size: smaller;">Esto es un texto h1 hecho pequeño</h1>
+                <h2 style="font-style: italic;">Esta fuente luce el texto</h2>
+                <h3 style="color: red;">Esto es un texto color rojo</h3>
+                <h4 style="text-decoration: underline;">Subrayamos lo importante</h4>
+                <h5 style="text-transform:uppercase;">Esto es un texto seteado en mayúsculas</h5>
+                <h6 style="text-align: center;">Pequeño texto centrado</h6>
+            </article>
+        </section>
+
+        <section id="DivisoresYDivs">
+            <h1>3. Divisores y Agrupación de Contenido</h1>
+            <article>
+                <div style="border: 2px solid black; margin-bottom: 10px;">
+                    <h2>Sección 1</h2>
+                    <p style="background-color: yellow;">Contenido resaltado de la primer sección agrupada en un div</p>
+                </div>
+                <div style="border: 2px solid black;">
+                    <h2>Sección 2</h2>
+                    <p style="text-decoration-line:line-through;">Contenido tachado de la segunda sección agrupada en un div</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="EnlacesYListas">
+            <h1>4. Enlaces y Listas</h1>
+            <article>
+                <p>Visita <a href="https://github.com/tomm1eob" target="_blank">mi perfil de GitHub</a> para saber qué estoy haciendo!</p>
+                <p style="text-decoration: underline;">Enlaces internos:</p>
+                <nav>
+                    <ul>
+                        <li><a href="#EstructuraBasica">Estructura Básica</a></li>
+                        <li><a href="#EncabezadosYTexto">Encabezados y texto</a></li>
+                        <li><a href="#DivisoresYDivs">Divisores y Divs</a></li>
+                    </ul>
+                </nav>
+                <p style="text-decoration: underline;">Lista desordenada:</p>
+                <ul>
+                    <li>Item número 1</li>
+                    <li>Item número 2</li>
+                </ul>
+                <p style="text-decoration: underline;">Lista ordenada:</p>
+                <ol>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="ElementosMultimedia">
+            <h1>5. Elementos Multimedia</h1>
+            <article>
+                <img src="https://www.aljazeera.com/wp-content/uploads/2022/12/SSS10772_1.jpg?resize=1920%2C1440" alt="Messi campeón del Mundo" width="250px" height="200" style="display: block; margin-bottom: 10px;">
+                <video src="https://video-previews.elements.envatousercontent.com/h264-video-previews/2a69ddde-6dce-416c-ae87-03eb59450522/9768197.mp4" width="390" height="220" controls style="display: block; margin-bottom: 10px;"></video>
+                <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls style="display: block;"></audio>
+            </article>
+        </section>
+
+        <section id="Tablas">
+            <h1>6. Tablas</h1>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                            <th>Columna 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                            <td>Dato 3</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 4</td>
+                            <td>Dato 5</td>
+                            <td>Dato 6</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total 1</td>
+                            <td>Total 2</td>
+                            <td>Total 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+        <section id="Formularios">
+            <h1>7. Formularios</h1>
+            <article>
+                <form>
+                    <label>Nombre:</label><input type="text" placeholder="example: Tomas">
+                    <label>Email:</label><input type="email" placeholder="example@gmail.com">
+                    <label>Mensaje:</label><textarea name="Mensaje" placeholder="Deje su mensaje (Opcional)"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+    </aside>
+
+    <footer>
+        <h1>Fin...</h1>
+    </footer>
+</body>
+</html>
